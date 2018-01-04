@@ -3,6 +3,7 @@ $:.unshift(File.dirname(__FILE__)) unless
 
 require 'base64'
 require 'forwardable'
+require 'typhoeus'
 
 require 'metrics/aggregator'
 require 'metrics/annotator'
@@ -14,6 +15,10 @@ require 'metrics/persistence'
 require 'metrics/queue'
 require 'metrics/smart_json'
 require 'metrics/version'
+
+require 'utils'
+require 'chart'
+require 'space'
 
 module Librato
 
